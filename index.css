@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --black-color: #373740;
+  --primary-color: #ff5b4f;
+  --primary-text: #eeeee4;
+  --secundary-text: #4c7bf2;
+  --terciary-color: #f8cb5f;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--black-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--primary-color);
+
+  padding: 10px;
+}
+
+/* Button -- Button -- Button -- Button -- Button --*/
+button {
+	border: 0;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-weight: 500;
+	transition: 0.3s;
+}
+
+a {
+	text-decoration: none;
+}
+
+.login {
+	background-color: var(--secundary-text);
+}
+
+.login a {
+	color: var(--primary-text);
+}
+
+.signup {
+	background-color: var(--terciary-color);
+}
+
+.signup a {
+	color: var(--black-color);
+}
+
+.login:hover {
+	background-color: #2a59d0;
+}
+
+.signup:hover {
+	background-color: #d6a93d;
+}
+
+.login:active {
+	background-color: #eeeee4;
+	color: #4c7bf2;
+}
+
+.login a:active {
+	color: #4c7bf2;
+	transition: 0.3s;
+}
+
+.signup:active {
+	background-color: #373740;
+	color: #d6a93d;
+}
+
+.signup a:active {
+	color: #d6a93d;
+	transition: 0.3s;
+}
+
+/* Button -- Button -- Button -- Button -- Button --*/

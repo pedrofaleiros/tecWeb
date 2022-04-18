@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="form.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+	<div class="back back-login">
+		<a href="index.html">Voltar</a>
+	</div>
+
+	<main class="signup">
+
+		<h1>Preencha seus dados</h1>
+
+		<div class="inputs">
+			<input type="text" id="em" class="email" placeholder="Digite seu e-mail">
+			<input type="text" id="nm" class="name" placeholder="Digite seu nome">
+			<input type="password" id="pw" class="password" placeholder="Digite sua senha">
+			<input type="password" id="pw2" class="password" placeholder="Confirme sua senha">
+			<p id="incorrect"></p>
+
+			<button type="submit" class="signup-button" onclick="verificar()">
+				Cadastrar
+			</button>
+		</div>
+	</main>
+
+	<script src="validation.js"></script>
+
+</body>
+
+</html>
