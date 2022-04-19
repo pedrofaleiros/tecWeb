@@ -4,14 +4,16 @@
 
   box-sizing: border-box;
   --black-color: #373740;
-  --primary-color: #ff5b4f;
+  --dark-color: #151520;
+  /* --primary-color: #ff5b4f; */
+  --primary-color: #c7585e;
   --primary-text: #eeeee4;
   --secundary-text: #4c7bf2;
   --terciary-color: #f8cb5f;
 }
 
 body {
-  background: var(--black-color);
+  background: var(--dark-color);
   display: flex;
 }
 
