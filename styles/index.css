@@ -123,11 +123,15 @@ main {
 
 .produto {
   border-radius: 15px;
-  height: 30vh;
   width: 80vw;
+  height: 20vh;
   margin-left: 10vw;
   margin-bottom: 5vh;
   background-color: var(--dark-color);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .produto img {
@@ -135,7 +139,14 @@ main {
   border-radius: 15px;
 }
 
-footer {
-  height: 10vh;
-  background-color: var(--dark-color);
+.data {
+  color: var(--light-color);
+}
+
+.comprar {
+  height: 30%;
+  width: fit-content;
+  background-color: #4c7bf2;
+  color: #eeeee4;
+  margin-right: 10px;
 }
