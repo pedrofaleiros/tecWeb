@@ -72,18 +72,32 @@ a {
 /* Button -- Button -- Button -- Button -- Button --*/
 
 .logo {
-  width: 25vw;
+  width: 20vw;
 }
 
 .redes {
-  width: 50vw;
+  width: 60vw;
 
   display: flex;
   justify-content: center;
 }
 
+.rede {
+  margin: 10px;
+  font-family: "Poppins", sans-serif;
+  color: var(--dark-color);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  height: 26px;
+}
+
 .menu {
-  width: 25vw;
+  width: 20vw;
   text-align: right;
   margin-right: 3vw;
 }
@@ -92,27 +106,22 @@ a {
   height: 15vh;
 }
 
-.rede {
-  margin: 5px;
-  font-family: "Poppins", sans-serif;
-  color: var(--primary-text);
-}
-
 .rede h2 {
   font-size: 16px;
   font-weight: 600;
 }
 
 .rede a {
-  color: var(--primary-text);
-}
-
-.rede a:hover {
   color: var(--dark-color);
 }
 
+.rede a:hover {
+  color: var(--primary-text);
+}
+
 .telefone {
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 main {
@@ -123,9 +132,9 @@ main {
 
 .produto {
   border-radius: 15px;
-  width: 80vw;
-  height: 20vh;
-  margin-left: 10vw;
+  width: 60vw;
+  height: 25vh;
+  margin-left: 20vw;
   margin-bottom: 5vh;
   background-color: var(--dark-color);
 
@@ -136,17 +145,54 @@ main {
 
 .produto img {
   height: 100%;
-  border-radius: 15px;
+  border-radius: 50%;
+  position: relative;
+  left: -50px;
+}
+
+.produto img:hover {
+  height: 200%;
+  transition: 0.5s;
+  border-radius: 25%;
+
+  z-index: 2;
 }
 
 .data {
   color: var(--light-color);
+  width: 50%;
+  background-color: var(--dark-color);
+  border-radius: 15px;
+  padding: 10px;
 }
 
 .comprar {
   height: 30%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   width: fit-content;
-  background-color: #4c7bf2;
-  color: #eeeee4;
+  background-color: #adff2f;
+  color: var(--dark-color);
   margin-right: 10px;
+  border-radius: 50px;
+}
+
+.comprar:hover {
+  background-color: #7acc0c;
+  transition: 0.3s;
+}
+
+footer {
+  height: 15vh;
+  background-color: var(--dark-color);
+  text-align: center;
+}
+
+footer a {
+  font-size: 12px;
+  color: var(--light-color);
+}
+
+footer a:hover {
+  color: var(--primary-color);
 }
