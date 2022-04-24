@@ -152,7 +152,7 @@ main {
   border-radius: 50%;
   position: relative;
   left: -50px;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .produto img:hover {
@@ -160,7 +160,7 @@ main {
   border-radius:15%;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 
