@@ -23,8 +23,8 @@ function verificarSignup() {
     return;
   }
 
-  if (!verify(pw, /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8,})$/)) {
-    alert("Senha Invalida");
+  if (!validaSenha(pw)) {
+    alert("Senha Inválida");
     return;
   }
 
@@ -54,10 +54,15 @@ function verify(str, regex) {
   return true;
 }
 
+function validaSenha(senha) {
+  const senhaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,20}$/
+  return senhaRegex.test(String(senha))
+}
+
 /* 
-/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8,})$/
 um número;
 uma letra minúscula;
 uma letra maiúscula;
-pelo menos 8 caracteres entre os digitados 
+min 8 caracteres 
+max 20 caracteres 
 */

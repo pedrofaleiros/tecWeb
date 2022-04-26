@@ -133,18 +133,18 @@ main {
 
 .produto {
   border-radius: 15px;
-  min-width: 50vw;
-  max-width: fit-content;
+  width: 60vw;
   
   min-height: 25vh;
-  height: fit-content;
-  margin-left: 25vw;
+  max-height: fit-content;
+  margin-left: 20vw;
   margin-bottom: 5vh;
   background-color: var(--dark-color);
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .produto img {
@@ -158,18 +158,21 @@ main {
 .produto img:hover {
   height: 35vh;
   border-radius:15%;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
   transition: 0.7s;
 }
 
 
 .data {
   color: var(--light-color);
-  width: 50%;
+  width: fit-content;
+  max-width: 60%;
+  height: fit-content;
   background-color: var(--dark-color);
   border-radius: 15px;
   padding: 10px;
+  font-size: 14px;
+  margin-left: -20px;
+
 }
 
 .comprar {
@@ -201,4 +204,14 @@ footer a {
 
 footer a:hover {
   color: var(--primary-color);
+}
+
+.tamanho, .materiais {
+  color: rgb(238, 238, 228, 0.8);
+}
+
+.nome {
+  font-size: 22px;
+  color: var(--primary-color);
+  font-weight: 600;
 }
