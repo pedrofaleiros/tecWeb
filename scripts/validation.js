@@ -23,10 +23,10 @@ function verificarSignup() {
     return;
   }
 
-  if (!verify(pw, /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8,})$/)) {
+  /* if (!verify(pw, /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8,})$/)) {
     alert("Senha Inválida");
     return;
-  }
+  } */
 
   alert("Cadastrado");
   location.reload(true);
