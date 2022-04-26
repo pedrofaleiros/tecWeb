@@ -126,7 +126,8 @@ a {
 
 
 main {
-  background-color: var(--black-color);
+  background-color: hsl(357, 50%, 10%);
+  /* background-color: var(--black-color); */
   margin: 0;
   padding: 5vh 0;
 }
